@@ -1,2 +1,3 @@
 # Django-Blizzard
-Attempting to recreate one of the pages from a Blizzard game
+Attempting to recreate the homepage of Heroes of the Storm. The links won't work, or go to other pages. 
+http://us.battle.net/heroes/en/
