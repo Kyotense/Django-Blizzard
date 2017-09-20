@@ -1,9 +1,11 @@
+
+
 .navi{
   background-color:#5437c6;
   list-style-type:none;
   margin:0;
-  padding:0;
-  overflow:hidden;
+  padding-top:2px;
+  padding-bottom:2px;
 }
 
 .navi li{
@@ -20,6 +22,11 @@
 
 .navi li a:hover{
   background-color: #111;
+}
+
+.container{
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .dropbtn {
@@ -61,12 +68,26 @@ li.dropdown {
     display: block;
 }
 
+.nav-header{
+  padding-left:50px;
+  padding-right:50px;
+  max-width: 1530px;
+  overflow:hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 #header-button{
   background-color:#c25d00;
   color:white;
   cursor:pointer;
-  padding: 15px 32px
+  padding: 15px 32px;
   border:none;
+  position:absolute;
   text-align:center;
   text-decoration:none;
   display:inline-block;
@@ -75,6 +96,12 @@ li.dropdown {
   float:right;
 }
 
+#img-header{
+  max-width:100%;
+  max-height:100%;
+}
+
 #hots-img{
   float:left;
+  width:240px;
 }
