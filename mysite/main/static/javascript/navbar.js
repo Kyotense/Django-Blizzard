@@ -1,18 +1,20 @@
 $(document).ready(function(){
-  var stickyNavTop = $(".nav-header").offset().top;
+  var stickyNavTop = $(".container").offset().top;
 
   var stickyNav = function(){
     var scrollTop = $(window).scrollTop();
 
     if(scrollTop > stickyNavTop){
-      $(".nav-header").addClass("sticky");
+      $(".container").addClass("sticky");
     }
     else{
-      $(".nav-header").removeClass("sticky")
+      $(".container").removeClass("sticky");
     }
   };
   stickyNav()
   $(window).scroll(function(){
     stickyNav();
   });
+
+
 });

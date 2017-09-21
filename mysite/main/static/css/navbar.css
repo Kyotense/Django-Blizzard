@@ -1,27 +1,26 @@
-
-
-.navi{
-  background-color:#5437c6;
-  list-style-type:none;
-  margin:0;
-  padding-top:2px;
-  padding-bottom:2px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3800c1;
 }
 
-.navi li{
-  float:left;
+li {
+    float: left;
 }
 
-.navi li a{
-  display:block;
-  color:white;
-  text-align:center;
-  padding: 14px 16px;
-  text-decoration:none;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.navi li a:hover{
-  background-color: #111;
+
+.active {
+    background-color: #4CAF50;
 }
 
 .container{
@@ -62,22 +61,18 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #9804ff}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.nav-header{
-  padding-left:50px;
-  padding-right:50px;
-  max-width: 1530px;
-  overflow:hidden;
-}
-
 .sticky {
   position: fixed;
+  padding:0;
   top: 0;
+  left:0;
+  right:0;
   width: 100%
 }
 

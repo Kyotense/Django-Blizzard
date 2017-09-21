@@ -5,8 +5,8 @@
   {% load staticfiles %}
   <title>Heroes of the Storm</title>
   <script src="{% static 'jquery/jquery-3.1.1.min.js' %}"></script>
-  <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
-  <link rel="stylesheet" href="{% static 'css/main.css'%}" />
+  <script type="text/javascript" src="{% static 'javascript/navbar.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'css/navbar.css'%}" />
   <link rel="icon" type="image/png" href="{% static 'img/heroes.png' %}">
 </head>
 
@@ -21,13 +21,13 @@
    -->
     <div class="nav-header">
       <div class="container">
-        <div>
+        <!--<div>
           <a href="#" id="hots-img"><img id="img-header" src="{% static 'img/hots-logo.png' %}"></img></a>
-        </div>
+        </div>-->
         <nav class="navi">
           <ul>
             <!-- Logo here -->
-            <li class="dropdown"><a href="#" class="dropbtn">Games</a>
+            <li class="dropdown navi"><a href="#" class="dropbtn">Games</a>
               <div class="dropdown-content">
                 <a href="#">Overview</a>
                 <a href="#">Roles</a>
@@ -41,7 +41,7 @@
             </li>
             <li class="navi"><a href="#">Heroes</a></li>
             <li class="navi"><a href="#">News</a></li>
-            <li class="dropdown"><a href="" class="dropbtn">Community</a>
+            <li class="dropdown navi"><a href="" class="dropbtn">Community</a>
               <div class="dropdown-content">
                 <a href="#">Leaderboards</a>
                 <a href="#">Forums</a>
@@ -49,11 +49,10 @@
             </li>
             <li class="navi"><a href="#">Esports</a></li>
 
-          </ul>
-        </nav>
+          </ul><!--
         <div>
           <a href="" id="header-button">Play Free</a>
-        </div>
+        </div>-->
         </nav>
       </div>
     </div>
