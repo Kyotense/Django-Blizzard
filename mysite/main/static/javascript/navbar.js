@@ -3,16 +3,13 @@ $(document).ready(function() {
 
   var stickyNav = function() {
     var scrollTop = $(window).scrollTop();
-
     if (scrollTop > stickyNavTop) {
-      $(".container").stop().addClass("sticky").css("top", "-50px").animate({
-        'top': "0px"
-      }, 500);
+      $(".container").addClass("sticky");
     } else {
       $(".container").removeClass("sticky");
     }
   };
-  stickyNav()
+  //stickyNav()
   $(window).scroll(function() {
     stickyNav();
   });

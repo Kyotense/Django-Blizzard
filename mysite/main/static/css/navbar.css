@@ -26,7 +26,13 @@ li a {
 .container{
   padding-left: 45px;
   padding-right: 45px;
+  display: flex;
+  transition: opacity .5s;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  flex-basis:100%;
 }
+
 
 .dropbtn {
     display: inline-block;
@@ -73,7 +79,8 @@ li.dropdown {
   top: 0;
   left:0;
   right:0;
-  width: 100%
+  width: 100%;
+  transition: transform .5s;
 }
 
 #header-button{
@@ -87,8 +94,7 @@ li.dropdown {
   text-decoration:none;
   display:inline-block;
   font-size:16px;
-  margin: 4px 2px;
-  float:right;
+
 }
 
 #img-header{
@@ -97,6 +103,5 @@ li.dropdown {
 }
 
 #hots-img{
-  float:left;
   width:240px;
 }
