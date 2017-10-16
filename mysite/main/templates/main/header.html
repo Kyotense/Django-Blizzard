@@ -6,6 +6,7 @@
   <title>Heroes of the Storm</title>
   <script src="{% static 'jquery/jquery-3.1.1.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'javascript/navbar.js' %}"></script>
+  <script type="text/javascript" src="{% static 'javascript/dropdown.js'%}"></script>
   <link rel="stylesheet" href="{% static 'css/navbar.css'%}" />
   <link rel="icon" type="image/png" href="{% static 'img/heroes.png' %}">
 </head>
@@ -27,8 +28,8 @@
         <nav class="navi">
           <ul>
             <!-- Logo here -->
-            <li class="dropdown navi"><a href="#" class="dropbtn">Games</a>
-              <div class="dropdown-content">
+            <li class="dropdown navi"><button class="dropbtn" id="gamebtn">Games</button>
+              <div class="dropdown-content" id="gamecontent">
                 <a href="#">Overview</a>
                 <a href="#">Roles</a>
                 <a href="#">Modes</a>
@@ -41,8 +42,8 @@
             </li>
             <li class="navi"><a href="#">Heroes</a></li>
             <li class="navi"><a href="#">News</a></li>
-            <li class="dropdown navi"><a href="" class="dropbtn">Community</a>
-              <div class="dropdown-content">
+            <li class="dropdown navi"><button class="dropbtn" id="commbtn">Community</button>
+              <div class="dropdown-content" id="commcontent">
                 <a href="#">Leaderboards</a>
                 <a href="#">Forums</a>
               </div>
