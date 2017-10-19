@@ -30,14 +30,16 @@ li a:hover{
 .container{
   padding-left: 45px;
   padding-right: 45px;
-  display: flex;
   transition: opacity .5s;
+  width: 100%;
+}
+.header-inner{
+  display: flex;
   flex-wrap: nowrap;
   flex-flow: row;
   flex-basis:100%;
-  width: 100%;
+  justify-content: center;
 }
-
 .dropbtn{
   background-color: #3800c1;
   color: white;
@@ -91,6 +93,22 @@ li.dropdown {
 
 .nav-header{
   max-width: 1530px
+}
+
+.header-image{
+  order:0;
+  position:relative;
+}
+.main-nav{
+  order:1;
+}
+
+.navi{
+  left:120px;
+}
+
+.play-button{
+  order:2;
 }
 
 #header-button{
