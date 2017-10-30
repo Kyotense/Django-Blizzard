@@ -32,7 +32,8 @@ li a:hover{
 .container{
   padding-left: 45px;
   padding-right: 45px;
-  transition: opacity .5s;
+  opacity:1;
+  transition: all .75s ease;
   width: 100%;
 }
 .header-inner{
@@ -90,7 +91,7 @@ li.dropdown {
   left:0;
   right:0;
   width: 100%;
-  transition: transform .5s;
+  opacity: 0;
 }
 
 .nav-header{
