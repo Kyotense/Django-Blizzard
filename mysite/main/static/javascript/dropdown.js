@@ -1,8 +1,8 @@
 $(document).ready(function(){
-  $("#gamebtn").click(function(){
-    $("#gamecontent").toggle();
+  $(".gamebtn").click(function(){
+    $(".gamecontent").toggle();
   });
-  $("#commbtn").click(function(){
-    $("#commcontent").toggle();
+  $(".commbtn").click(function(){
+    $(".commcontent").toggle();
   });
 });

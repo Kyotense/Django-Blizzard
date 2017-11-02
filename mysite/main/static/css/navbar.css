@@ -32,10 +32,18 @@ li a:hover{
 .container{
   padding-left: 45px;
   padding-right: 45px;
+  display:none;
+  width: 100%;
+}
+
+.container2{
+  padding-left: 45px;
+  padding-right: 45px;
   opacity:1;
   transition: all .75s ease;
   width: 100%;
 }
+
 .header-inner{
   display: flex;
   flex-wrap: nowrap;
@@ -84,6 +92,10 @@ li.dropdown {
     display: block;
 }
 
+.vanish{
+  opacity: 0;
+}
+
 .sticky {
   position: fixed;
   padding:0;
@@ -91,7 +103,7 @@ li.dropdown {
   left:0;
   right:0;
   width: 100%;
-  opacity: 0;
+
 }
 
 .nav-header{

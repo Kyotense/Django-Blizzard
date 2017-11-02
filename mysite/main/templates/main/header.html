@@ -6,6 +6,7 @@
   <title>Heroes of the Storm</title>
   <script src="{% static 'jquery/jquery-3.1.1.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'javascript/navbar.js' %}"></script>
+
   <script type="text/javascript" src="{% static 'javascript/dropdown.js'%}"></script>
   <link rel="stylesheet" href="{% static 'css/navbar.css'%}" />
   <link rel="icon" type="image/png" href="{% static 'img/heroes.png' %}">
@@ -21,8 +22,9 @@
       #When you scroll down, the navbar sticks to the top of the page
       #I think the image and button aren't in the navbar specifically, maybe use a div tag?
    -->
+
       <div class="nav-header">
-        <div class="container">
+        <div class="container sticky">
           <div class="header-inner">
             <div class="header-image">
               <div class="shadow"></div>
@@ -31,9 +33,9 @@
             <div class="main-nav">
               <nav class="navi">
                 <ul>
-                  <!-- Logo here -->
-                  <li class="dropdown navi"><button class="dropbtn" id="gamebtn">Games</button>
-                    <div class="dropdown-content" id="gamecontent">
+
+                  <li class="dropdown navi"><button class="dropbtn gamebtn">Games</button>
+                    <div class="dropdown-content gamecontent">
                       <a href="#">Overview</a>
                       <a href="#">Roles</a>
                       <a href="#">Modes</a>
@@ -46,8 +48,8 @@
                   </li>
                   <li class="navi"><a href="#">Heroes</a></li>
                   <li class="navi"><a href="#">News</a></li>
-                  <li class="dropdown navi"><button class="dropbtn" id="commbtn">Community</button>
-                    <div class="dropdown-content" id="commcontent">
+                  <li class="dropdown navi"><button class="dropbtn commbtn">Community</button>
+                    <div class="dropdown-content commcontent">
                       <a href="#">Leaderboards</a>
                       <a href="#">Forums</a>
                     </div>
@@ -63,6 +65,51 @@
           </div>
         </div>
       </div>
+
+
+
+      <div class="nav-header">
+        <div class="container2">
+          <div class="header-inner">
+            <div class="header-image">
+              <div class="shadow"></div>
+              <a href="#" id="hots-img"><img id="img-header" src="{% static 'img/hots-logo.png' %}"></img></a>
+            </div>
+            <div class="main-nav">
+              <nav class="navi">
+                <ul>
+                  <li class="dropdown navi"><button class="dropbtn gamebtn">Games</button>
+                    <div class="dropdown-content gamecontent">
+                      <a href="#">Overview</a>
+                      <a href="#">Roles</a>
+                      <a href="#">Modes</a>
+                      <a href="#">Heroes Brawl</a>
+                      <a href="#">Battlegrounds</a>
+                      <a href="#">Ranked Play</a>
+                      <a href="#">Media</a>
+                      <a href="#">Recruit a Friend</a>
+                    </div>
+                  </li>
+                  <li class="navi"><a href="#">Heroes</a></li>
+                  <li class="navi"><a href="#">News</a></li>
+                  <li class="dropdown navi"><button class="dropbtn commbtn">Community</button>
+                    <div class="dropdown-content commcontent">
+                      <a href="#">Leaderboards</a>
+                      <a href="#">Forums</a>
+                    </div>
+                  </li>
+                  <li class="navi"><a href="#">Esports</a></li>
+                </ul>
+
+              </nav>
+            </div>
+            <div class="play-button">
+              <a href="" id="header-button">Play Free</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
     <!-- Used for the main page -->
     {% block content %} {% endblock %}
