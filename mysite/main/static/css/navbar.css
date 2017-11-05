@@ -37,7 +37,7 @@ li a:hover{
 }
 
 .container2{
-  
+
   padding-right: 45px;
   opacity:1;
   transition: all .75s ease;
@@ -131,6 +131,7 @@ li.dropdown {
   text-align: left;
   width: 800px;
   margin: 0 auto;
+  background-color: purple;
 }
 
 body{

@@ -1,0 +1,71 @@
+.body_container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.hero{
+  order: 0;
+  height:900px;
+  padding-top:100px;
+}
+
+.news{
+  order:1;
+}
+
+.heroes_overview{
+  order:2;
+}
+
+.battlgrounds{
+  order:3;
+}
+
+.download_heroes{
+  order:4;
+}
+
+.social_wall{
+  order:5;
+}
+
+.social_footer{
+  order:6;
+}
+
+#btn_orange{
+  background-color:#c25d00;
+  color:white;
+  cursor:pointer;
+  padding: 14px 32px;
+  border:none;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:16px;
+}
+
+#btn_purple{
+  background-color:#6100c2;
+  color:white;
+  cursor:pointer;
+  padding: 14px 32px;
+  border:none;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:16px;
+}
+
+.h1_heading{
+  color:white;
+}
+
+.h2_heading{
+  color:white;
+}
+
+.hero_inner{
+  padding: 0 45px;
+}
