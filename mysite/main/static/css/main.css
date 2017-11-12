@@ -38,34 +38,42 @@
   background-color:#c25d00;
   color:white;
   cursor:pointer;
-  padding: 14px 32px;
+  padding: 7px 32px;
   border:none;
   text-align:center;
   text-decoration:none;
-  display:inline-block;
   font-size:16px;
+  width: 160px;
+  height: 30px;
 }
 
 #btn_purple{
   background-color:#6100c2;
   color:white;
   cursor:pointer;
-  padding: 14px 32px;
+  padding: 7px 32px;
   border:none;
   text-align:center;
   text-decoration:none;
-  display:inline-block;
   font-size:16px;
+  width: 160px;
+  height: 30px;
 }
 
 .h1_heading{
   color:white;
+  margin:0;
 }
 
 .h2_heading{
   color:white;
+  margin:0 0 50px 0;
 }
 
 .hero_inner{
   padding: 0 45px;
+}
+
+.hero-btn{
+  display: inline-block;
 }
